@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/android.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main nav{
+    width: 100%;
+    height: 8vh;
+}
+.main nav .nav-between{
+    height: 100%;
+    /* width: 85%; */
+    margin: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.main nav .nav-between .bars{
+    cursor: pointer;
+
+}
+.main nav .nav-between .bars > span:nth-child(2)
+{
+    transition: width 300ms ease;
+    transition-delay: 100ms;
+}
+.main nav .nav-between .bars > span:nth-child(3){
+    transition: width 300ms ease;
+}
+.main nav .nav-between .bars:hover > span:nth-child(2){
+    width: 25px;
+    transition: width 300ms ease;
+}
+.main nav .nav-between .bars:hover > span:nth-child(3){
+    width: 25px;
+    transition: width 400ms ease;
+    transition-delay: 100ms;
+}
+.main nav .nav-between .bars span:nth-child(1){
+    width: 25px;
+    height: 3px;
+    display: block;
+    margin: 5px auto;
+    background: black;
+}
+.main nav .nav-between .bars span:nth-child(2){
+    width: 15px;
+    height: 3px;
+    display: block;
+    margin: 5px 0;
+    background: black;
+}
+.main nav .nav-between .bars span:nth-child(3){
+    width: 10px;
+    height: 3px;
+    display: block;
+    margin: 5px 0;
+    background: black;
+}
+
+.main nav .nav-between .cart i{
+    font-size: 20px;
+}
+
+/* hero */
+.main .hero{
+    width: 100%;    
+}
+.main .hero .title{
+    margin: 30px 30px;
+}
+.main .hero .title h3{
+    color: #302A53;
+    font-size: 35px;
+    font-weight: 999;
+    font-family: 'Open Sans', sans-serif;
+}
+.main .hero .title p{
+    color: #422B2B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight:600;
+}
+
+
+svg{
+    height: auto;
+    width: 340px;
+    position: absolute;
+    top: 50%;
+    
+    right: 0;
+    transform: translate(0,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.controls-section{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.controls-section .controls-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.controls-section .controls-container .house{
+
+}
+.controls-section .controls-container .house i{
+    color: black;
+    font-size: 22px;
+}
+.controls-section .controls-container .add-circle{
+    background: #1355FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 13px 13px; */
+    height: 48px ;
+    width: 48px;
+    border-radius: 100%;
+    margin: 0 25px;
+    font-size: 42px;
+    transform: rotate(315deg);
+    color: white;
+}
+
+
+.controls-section .controls-container .cycle{
+    color: black;
+    font-size: 22px;
+}
