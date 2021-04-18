@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/android.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main nav{
+    width: 100%;
+    height: 8vh;
+}
+
+.main nav .nav-center{
+    margin: 0 30px;
+    height: 100%;
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main nav .nav-center .back{
+    font-size: 20px;
+}
+.main nav .nav-center .accesories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgb(104, 104, 104);
+}
+.main nav .nav-center .accesories h3{
+
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.main nav .nav-center .accesories i{
+font-size: 15px;
+
+margin: 0 8px;
+}
+.main .product{
+    padding: 20px 0;
+}
+.main .product .wheel{
+    margin: 30px 30px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .product .wheel .dash{
+display: flex;
+padding: 30px 0; 
+}
+.main .product .wheel .dash span:nth-child(1){
+    height: 5px;
+    width: 8px;
+    display: block;
+    background: rgba(192, 192, 192, 0.5);
+    border-radius: 100px;
+}
+.main .product .wheel .dash span:nth-child(2){
+    height: 5px;
+    width: 15px;
+    display: block;
+    background: #1355FF;
+    border-radius: 100px;
+    margin: 0 6px;
+}
+.main .product .wheel .dash span:nth-child(3){
+    height: 5px;
+    width: 8px ;
+    display: block;
+    background: rgba(192, 192, 192, 0.5);
+    border-radius: 100px;
+}
+
+.main .product .wheel .wheel-title{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.main .product .wheel .wheel-title h3{
+    font-size: 23px;
+}
+.main .product .wheel .wheel-title p{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(104, 104, 104);
+    margin: 5px 0;
+}
+.main .product .wheel .product-info{
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main .product .wheel .product-info .box {
+    font-family: 'Open Sans', sans-serif;
+    height: 80px;
+    width: 80px;
+    background:white;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+}
+.main .product .wheel .product-info .box h4{
+    font-size: 12px;
+
+}
+.main .product .wheel .product-info .box p{
+    color: rgb(104, 104, 104);
+    font-size: 12px;
+
+}
+
+/* footer */
+.main .footer{
+    position: fixed;
+    bottom: 0;
+    height: 110px;
+    background: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 10%);
+    width: 100%;
+
+}
+.main .footer .footer-container{
+    margin: 0 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+}
+
+.main .footer .footer-container .total-price{
+    font-family: 'Open Sans', sans-serif;
+    justify-self: start;
+
+}
+.main .footer .footer-container .total-price p{
+    color: rgb(104, 104, 104);
+    font-size: 12px;
+    font-weight: 700;
+}
+.main .footer .footer-container .items-title{
+    font-family: 'Open Sans', sans-serif;
+}
+.main .footer .footer-container .items-title p{
+    color: rgb(104, 104, 104);
+    font-size: 12px;
+    font-weight: 700;
+}
+.main .footer .footer-container .items-title span{
+    color: #1355FF;
+}
+.main .footer .footer-container .addbutton{
+    justify-self: end;
+}
+.main .footer .footer-container .addbutton button{
+    height: 30px;
+    width: 70px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background: #1355FF;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.main .footer .footer-container .addbutton button:hover{
+    box-shadow: 0px 1px 10px rgb(62, 139, 255);
+    transition: 0.8s;
+ 
+}
