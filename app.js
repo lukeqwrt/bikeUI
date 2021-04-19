@@ -8,7 +8,7 @@ document.getElementById('wheelplus').addEventListener('click', () => {
     const timeline = gsap.timeline({onComplete:gotoWheel})
     timeline
     // parts
-        .fromTo('#leftwheel', {opacity: 1, rotation: 0}, {duration: 2, transformOrigin:"center",  opacity: 1, rotation: 380, x: 280, })
+        .fromTo('#leftwheel', {opacity: 1, rotation: 0}, {duration: 2, transformOrigin:"center",  opacity: 1, rotation: 380, x: 280 })
         .fromTo('#body', {opacity: 1, x:0 }, {duration: 2,opacity:1, x:280}, '<')
         .fromTo('#wheelplus', {opacity:1}, {duration:0.5,transformOrigin:"center", opacity:0 }, '<.1')
         .fromTo('#seetplus', {opacity:1}, {duration:0.5,transformOrigin:"center", opacity:0 }, '<')
