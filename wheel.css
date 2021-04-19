@@ -24,7 +24,7 @@
     /* flex */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .main nav .nav-center .back{
@@ -34,7 +34,7 @@
 .main nav .nav-center .accesories {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 100%;
     color: rgb(104, 104, 104);
 }
@@ -47,6 +47,9 @@
 font-size: 15px;
 
 margin: 0 8px;
+}
+.main nav .nav-center .cart{
+    font-size: 20px;
 }
 .main .product{
     padding: 20px 0;
